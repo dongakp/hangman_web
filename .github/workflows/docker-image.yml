@@ -24,4 +24,4 @@ jobs:
     - name: Build the Docker image
       run: docker build --tag ${{secrets.DOCKER_USER}}/hangman_web:latest .
     - name: docker push
-      run: docker push --tag ${{secrets.DOCKER_USER}}/hangman_web:latest
+      run: docker push ${{secrets.DOCKER_USER}}/hangman_web:latest
